@@ -1,0 +1,75 @@
+nav {
+    display: flex;
+    border-bottom: 1px solid #D7DBDD;
+    max-width: 100%;
+    list-style: none;
+
+}
+
+nav li {
+    display: inline-block;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 5px 30px;
+    color: black;
+    font-size: 12px;
+    border-bottom: 2px solid transparent;
+
+    &.selected {
+        border-bottom-color: black;
+    }
+}
+
+@media (max-width: 800px) {
+    nav ul {
+        display: none;
+    }
+    
+    nav span {
+        display: block;
+        width: 100%;
+    }
+    
+    nav .hamburger {
+        width: 100%;
+    }
+    nav .hamburger:focus > ul {
+        display: block;
+    }
+    
+    nav ul li.tab {
+        display: block;
+        width: 100%;
+        
+    }
+    
+}
+
+
+input.burger-shower {
+  display: none;
+}
+
+.burger-shower:checked ~ #mininav {
+  display: block;
+}
+
+.hamburger {
+  display:block;
+}
+
+nav.tabs.hamburger  {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav.tabs.hamburger label,
+nav.tabs.hamburger ul {
+    flex: 100%;
+}
+
+.burger-menu {
+   display:none;
+}

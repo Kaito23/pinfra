@@ -1,0 +1,145 @@
+/* Grid */
+.row {
+    width: 100%;
+    max-width: 100%;
+}
+
+@media (min-width: 600px) {
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+.column {
+    max-width: 100%;
+}
+
+._1 {
+flex: 0 0 8.33%;
+    max-width: 8.33%;
+}
+._2 {
+flex: 0 0 16.67%;
+    max-width: 16.67%;
+}
+._3 {
+flex: 0 0 25%;
+    max-width: 25%;
+}
+._4 {
+flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+._5 {
+    flex: 0 0 41.67%;
+    max-width: 41.67%;
+}
+._6 {
+flex: 0 0 50%;
+    max-width: 50%;
+}
+._7 {
+flex: 0 0 58.33%;
+    max-width: 58.33%;
+}
+._8 {
+flex: 0 0 66.67%;
+    max-width: 66.67%;
+}
+._9 {
+flex: 0 0 75%;
+    max-width: 75%;
+}
+._10 {
+flex: 0 0 83.33%;
+    max-width: 83.33%;
+}
+._11 {
+flex: 0 0 91.33%;
+    max-width: 91.33%;
+}
+._12 {
+flex: 0 0 100%;
+    max-width: 100%;
+} 
+
+
+@media (max-width: 600px) {
+    .column {
+        max-width: 100%;
+    }   
+}
+
+.column {
+    padding: 15px;
+}
+@media (max-width: 600px) {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .column {
+        padding: 0;
+        flex: 100%;
+        max-width: 100%;
+    }
+    
+    .s {
+        &_1 {
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
+        &_2 {
+              flex: 0 0 50%;
+              max-width: 50%;
+        }
+        &_3 {
+            flex: 0 0 75%;
+            max-width: 75%;
+        }
+        &_4 {
+              flex: 0 0 100%;
+              max-width: 100%;
+        }
+    }
+}
+@media (max-width: 400px) {
+    .xs {
+        &_1 {
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
+        &_2 {
+              flex: 0 0 50%;
+              max-width: 50%;
+        }
+        &_3 {
+            flex: 0 0 75%;
+            max-width: 75%;
+        }
+        &_4 {
+              flex: 0 0 100%;
+              max-width: 100%;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .hide-small, .hide-s {
+        display: none;
+    }    
+}
+
+@media (min-width: 801px) {
+    .hide-large {
+        display: none;
+    }    
+}
+
+.align-center {
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}

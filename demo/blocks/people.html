@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PandaFramework</title>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style_subscription.css">
+</head>
+
+<body><!-- http://foundation.zurb.com/building-blocks/blocks/people-you-might-know.html -->
+
+    <div class="container">
+        
+        <h2>Become a member</h2>
+            <form>
+                <div class="row">
+                    <div class="column">
+                        <label for="exampleEmailInput">Name</label>
+                        <input class="u-full-width" placeholder="Name" id="exampleEmailInput" type="text" name="name">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <label for="exampleEmailInput">Your email</label>
+                        <input class="u-full-width" placeholder="test@mailbox.com" id="exampleEmailInput" type="email" name="mail">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <button type="submit" class="button" >submit</button> 
+                    </div>                
+                </div>                
+            </form>
+        </div>
+
+    <!-- /.container -->
+    <script   src="https://code.jquery.com/jquery-3.2.1.min.js"
+			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			  crossorigin="anonymous"></script>
+    <script>
+    $( "form" ).on( "submit", function( event ) {
+      event.preventDefault();
+        var formValues =$( this ).serializeArray();
+      console.log( formValues );
+        var jsonData = JSON.stringify(formValues);
+        console.log(jsonData);
+        var obj = {
+            "title":jsonData[0].value,
+            "name":jsonData[1].value,
+            "mail":jsonData[2].value
+        }
+        
+        $.ajax({
+            type: "POST",
+            url: "localhost:8080/subscription/addSubscription",
+            data: jsonData,
+            success: function() {
+                console.log("success");   
+            }
+        });
+    });
+    
+    </script>
+</body>
+
+</html>
