@@ -99,6 +99,10 @@
 	</div>
     
 <style>
+
+#content {
+	display: none;
+}
 	
 html {
     overflow-x: hidden;
@@ -276,7 +280,8 @@ function onPlayerStateChange(e) {
     }
     if (e.data == YT.PlayerState.PLAYING){
         $('#loader').hide();
-        $('body').css('overflow', 'auto');
+        $('#content').show();
+        
     }
 }
 
