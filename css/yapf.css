@@ -447,18 +447,18 @@ input[type="checkbox"] {
   padding: 75px 0;
   text-align: center;
 }
-.breadcrump {
+.breadcrumb {
   margin: 0 0 1em;
   padding: 0 0 1em;
   list-style: none;
   border-bottom: 1px solid #f4f4f4;
   font-size: 1rem;
 }
-.breadcrump li {
+.breadcrumb li {
   display: inline-block;
   padding: 0 .25em 0 0;
 }
-.breadcrump li:before {
+.breadcrumb li:before {
   content: '/';
   padding: 0 .5em 0 0;
 }
