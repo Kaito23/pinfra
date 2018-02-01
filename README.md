@@ -1,3 +1,5 @@
+<img align="right" width="100" height="100" src="/favicons/ms-icon-144x144.png" alt="pineapple-Logo" />
+
 # pinfra
 The minimalistic pineapple framework
 
