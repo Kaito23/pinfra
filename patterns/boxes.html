@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    
+    <meta name="description" content="{{description}}">
+    <meta name="keywords" content="{{keywords}}">
+    <meta name="author" content="{{Author}}">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Boxes</title>
+
+    <!-- Reset -->
+    <link href="../css/min/reset.min.css" rel="stylesheet">
+    <!-- Yapf -->
+    <link href="../css/min/yapf.min.css" rel="stylesheet">
+    <link href="../css/min/yapf.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    
+    <style>
+   
+.box {
+    min-height: 20px;
+    margin-bottom: 20px;
+    background-color: #F5F5F5;
+    border: 1px solid #E3E3E3;
+    border-radius: 4px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05) inset;
+}
+.box .head {
+    height: 150px;
+    position: relative;
+    text-align: center;
+}
+.box img {
+    height: 150px;
+    object-fit: cover;
+    width: 100%;
+}
+
+box h2 {
+    position: absolute;
+    color: #fff;
+    margin: 15px;
+    bottom: 0;
+}
+
+.box .body {
+    padding: 15px;
+}      
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+			<div class="column _12">
+                <h1>Boxes:</h1>
+            </div>
+			<div class="column _6">
+				<div class="box">
+					<div class="head">
+						<img src="../demo/img/ananas3.jpg" alt="ananas" />
+						<h2>Ananas2</h2>
+					</div>
+					<div class="body">Body
+
+						<hr /> lorem ipsum dolor sit amet</div>
+				</div>
+			</div>
+			<div class="column _6">
+				<div class="box">
+					<div class="head">
+						<img src="../demo/img/ananas4.jpg" alt="ananas" />
+						<h2>Ananas1</h2>
+					</div>
+					<div class="body">Body</div>
+				</div>
+			</div>
+		</div>
+    </div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-90544093-7', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
