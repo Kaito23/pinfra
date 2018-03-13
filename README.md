@@ -7,5 +7,9 @@ The minimalistic pineapple framework
 1. run "npm install"
 2. run "npm run gulp"
 
+## minification
+to minify the css files in the css folder run
+gulp minify-css
+
 ## why another framework?
 Because I like developing CSS.
