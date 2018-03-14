@@ -294,6 +294,17 @@ table td {
   border: 3px solid #fff;
   background-color: rgba(0, 0, 0, 0.3);
 }
+.box {
+  min-height: 20px;
+  margin-bottom: 20px;
+  background-color: #F5F5F5;
+  border: 1px solid #E3E3E3;
+  border-radius: 4px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05) inset;
+}
+.box .body {
+  padding: 15px;
+}
 input[type="submit"] button,
 .button,
 .btn {
