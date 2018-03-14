@@ -13,7 +13,7 @@ var rename = require('gulp-rename');
 gulp.task('less', function() {
 	return gulp.src('less/style.less')
 		.pipe(less().on('error', util.log))
-        .pipe(rename('yapf.css'))
+        .pipe(rename('pinfra.css'))
 		.pipe(gulp.dest('css'))
 		.pipe(reload({stream: true}));
 });
