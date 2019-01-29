@@ -1,4 +1,4 @@
-<img align="right" width="100" height="100" src="/img/pineapple-small.png" alt="pineapple-Logo" />
+<img align="right" width="100" height="100" src="/demo/img/pineapple-small.png" alt="pineapple-Logo" />
 
 # pinfra
 The minimalistic pineapple framework
